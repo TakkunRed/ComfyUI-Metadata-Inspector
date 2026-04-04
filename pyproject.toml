@@ -1,0 +1,16 @@
+[project]
+name = "ComfyUI-Metadata-Inspector"
+description = "A specialized suite of custom nodes for ComfyUI designed to hunt down and visualize generation parameters (prompts, steps, samplers, etc.) embedded in AI-generated images. It works across different formats and platforms (ComfyUI, Automatic1111, Civitai, and more)."
+version = "1.0.0"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/TakkunRed/ComfyUI-Metadata-Inspector"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "takkun"
+DisplayName = "ComfyUI-Metadata-Inspector"
+Icon = ""
