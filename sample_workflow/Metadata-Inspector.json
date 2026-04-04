@@ -1,0 +1,183 @@
+{
+  "id": "6dece8f5-558a-4d30-935c-2b6a96971b9f",
+  "revision": 0,
+  "last_node_id": 94,
+  "last_link_id": 87,
+  "nodes": [
+    {
+      "id": 92,
+      "type": "LoadImageWithFileName",
+      "pos": [
+        -420.53221872844506,
+        -99.91838789482074
+      ],
+      "size": [
+        270,
+        334
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "label": "upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "label": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "label": "image_name",
+          "name": "image_name",
+          "type": "STRING",
+          "links": [
+            85
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImageWithFileName"
+      },
+      "widgets_values": [
+        "example.png",
+        "image"
+      ]
+    },
+    {
+      "id": 91,
+      "type": "ExtractPngMetadata",
+      "pos": [
+        -118.13213327922631,
+        -95.11840010185199
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image_name",
+          "name": "image_name",
+          "type": "STRING",
+          "widget": {
+            "name": "image_name"
+          },
+          "link": 85
+        }
+      ],
+      "outputs": [
+        {
+          "label": "metadata_json",
+          "name": "metadata_json",
+          "type": "STRING",
+          "links": [
+            87
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ExtractPngMetadata"
+      },
+      "widgets_values": [
+        "example.png"
+      ]
+    },
+    {
+      "id": 94,
+      "type": "JsonVisualizer",
+      "pos": [
+        185.0659380098362,
+        -89.51839399833636
+      ],
+      "size": [
+        161.2037109375,
+        26
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "json_string",
+          "name": "json_string",
+          "type": "STRING",
+          "link": 87
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JsonVisualizer"
+      }
+    }
+  ],
+  "links": [
+    [
+      85,
+      92,
+      2,
+      91,
+      0,
+      "STRING"
+    ],
+    [
+      87,
+      91,
+      0,
+      94,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        606.3322065214138,
+        523.5183939983364
+      ]
+    },
+    "frontendVersion": "1.41.21",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
