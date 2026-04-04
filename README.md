@@ -8,6 +8,8 @@ A specialized suite of custom nodes for ComfyUI designed to hunt down and visual
 ## Core Mission
 The primary goal of this tool is to **reveal hidden prompt strings and workflow structures** from AI-generated content. Whether it's a PNG with a complex node graph or a JPEG with a text-based prompt hidden in EXIF data, this inspector brings it to light.
 
+![Node Screenshot](images/workflow_image.png)
+
 ## Node Descriptions
 
 This extension includes three essential nodes to complete the inspection workflow:
