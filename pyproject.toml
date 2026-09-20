@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI-Metadata-Inspector"
 description = "A specialized suite of custom nodes for ComfyUI designed to hunt down and visualize generation parameters (prompts, steps, samplers, etc.) embedded in AI-generated images. It works across different formats and platforms (ComfyUI, Automatic1111, Civitai, and more)."
-version = "1.0.0"
+version = "1.0.1"
 readme = "README.md"
 license = {file = "LICENSE"}
 dependencies = []
